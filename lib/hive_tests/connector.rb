@@ -70,8 +70,7 @@ module HiveTests
     def connection_options
       {
         hive_version: @config.hive_version,
-        transport: :sasl,
-        sasl_params: {},
+        transport: :buffered,
         logger: @config.logger,
         timeout: @config.connection_timeout
       }
