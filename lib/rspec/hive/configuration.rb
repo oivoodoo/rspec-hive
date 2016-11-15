@@ -77,7 +77,6 @@ module RSpec
       def default_hive_options
         {'hive.exec.dynamic.partition' => 'true',
          'hive.exec.dynamic.partition.mode' => 'nonstrict',
-         'hive.exec.max.dynamic.partitions' => '100000',
          'mapred.child.java.opts' => '-Xmx2048m'}
       end
     end
